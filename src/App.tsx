@@ -17,6 +17,8 @@ function App({}: AppProps) {
   // Return the App component.
   // const foo = 'bar';
   // confetti();
+  // https://github.com/snowpackjs/snowpack/discussions/2345
+  // ☝️ note for streaming imports
   return (
     <div className="App">
       <header className="App-header">
