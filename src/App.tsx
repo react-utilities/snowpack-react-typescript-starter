@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
+// import { If } from 'react-if';
+// import confetti from 'canvas-confetti';
 import './App.css';
 
 interface AppProps {}
@@ -13,10 +15,17 @@ function App({}: AppProps) {
     return () => clearTimeout(timer);
   }, [count, setCount]);
   // Return the App component.
+  // const foo = 'bar';
+  // confetti();
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <p>Wow, this change is quick! 🚀</p>
+        <p>Is the issues below b/c of the esm install!</p>
+        {/* <If condition={foo === 'biz'}>
+          <p>This is really cool b/c we did the import on the the fly</p>
+        </If> */}
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
