@@ -1,6 +1,6 @@
 {
   "name": "@react-utilities/snowpack-react-typescript-starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Snowpack React TypeScript Starter using Pnpm",
   "main": "index.ts",
   "repository": "git@github.com:react-utilities/snowpack-react-typescript-starter.git",
@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-query": "^3.8.3"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",

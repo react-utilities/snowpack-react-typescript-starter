@@ -4,6 +4,8 @@ A Snowpack starter pack using React and Typescript using Pnpm.
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
+Throughout the code used in this project are comments to assist you in quickly understanding the awesomeness of Snowpack (as we learn ourselves 🤝).
+
 ---
 
 ## Setup
