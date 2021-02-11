@@ -9,19 +9,17 @@ const getPostById = async (id: number) => {
   return data;
 };
 
-function usePost(postId: number) {
-  return useQuery(['post', postId], () => getPostById(postId), {
-    enabled: !!postId,
-  });
+function fetchFirstPost(postId: number) {
+  return useQuery(['post', postId], () => getPostById(postId));
 }
 
 export function Post({ postId }): JSX.Element {
-  const { status, data, error, isFetching } = usePost(postId);
+  const { status, data, error, isFetching } = fetchFirstPost(postId);
 
   return (
     <div>
       {!postId || status === 'loading' ? (
-        'Loading...'
+        <span>Loading...</span>
       ) : status === 'error' ? (
         <span>Error: {error.message}</span>
       ) : (
