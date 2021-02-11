@@ -1,8 +1,19 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Post } from './components/Post';
+
+/**
+ * Quick notes 📝
+ * ---
+ * @note uncomment the '//' code comments
+ * => view SnowPack esm magic in your browser! 🎉
+ * @note https://github.com/snowpackjs/snowpack/discussions/2345
+ * ☝️ note for streaming imports
+ */
+
 // import { If } from 'react-if';
 // import confetti from 'canvas-confetti';
+
 import './App.css';
 
 interface AppProps {}
@@ -10,11 +21,8 @@ const queryClient = new QueryClient();
 
 function App({}: AppProps) {
   const postId = 1;
-  // Return the App component.
   // const foo = 'bar';
   // confetti();
-  // https://github.com/snowpackjs/snowpack/discussions/2345
-  // ☝️ note for streaming imports
   return (
     <div className="App">
       <header className="App-header">

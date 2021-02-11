@@ -1,6 +1,7 @@
 dependencies:
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
+  react-query: 3.8.3_react-dom@17.0.1+react@17.0.1
 devDependencies:
   '@snowpack/plugin-dotenv': 2.0.5
   '@snowpack/plugin-react-refresh': 2.4.0_react-dom@17.0.1+react@17.0.1
@@ -172,7 +173,6 @@ packages:
   /@babel/runtime/7.12.13:
     dependencies:
       regenerator-runtime: 0.13.7
-    dev: true
     resolution:
       integrity: sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
   /@babel/template/7.12.13:
@@ -1817,6 +1817,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-md9k+Gxa3qLH6sUKpeC2CNkJK/Ld+bEz5X96nYwloqphQE0CKCVEKco/6jxEZixinqNdz5RFi/KaCyfbMDMAXQ==
+  /match-sorter/6.2.0:
+    dependencies:
+      '@babel/runtime': 7.12.13
+      remove-accents: 0.4.2
+    dev: false
+    resolution:
+      integrity: sha512-yhmUTR5q6JP/ssR1L1y083Wp+C+TdR8LhYTxWI4IRgEUr8IXJu2mE6L3SwryCgX95/5J7qZdEg0G091sOxr1FQ==
   /media-typer/0.3.0:
     dev: true
     engines:
@@ -2146,6 +2153,24 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+  /react-query/3.8.3_react-dom@17.0.1+react@17.0.1:
+    dependencies:
+      '@babel/runtime': 7.12.13
+      match-sorter: 6.2.0
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+    dev: false
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    resolution:
+      integrity: sha512-hLnTC/pZLrc6KxmGJ3O0w1qATjRIOpEFTG4RbHIWcN/xXsfogsINzSppFSknBAJjxBxylobDkyi8Z5c90BeI8Q==
   /react-refresh/0.9.0:
     dev: true
     engines:
@@ -2186,9 +2211,12 @@ packages:
     resolution:
       integrity: sha512-EJ4UNY/U1t2P/2k6oqotuX2Cc3T6nxJwsM0N0asT7dhrtH1ltUxDn4NalSYmPE2rCkVpcf/X6R0wDwcFpzhd4w==
   /regenerator-runtime/0.13.7:
-    dev: true
     resolution:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
+  /remove-accents/0.4.2:
+    dev: false
+    resolution:
+      integrity: sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=
   /resolve-path/1.4.0:
     dependencies:
       http-errors: 1.6.3
@@ -2643,7 +2671,8 @@ specifiers:
   '@web/test-runner': ^0.12.0
   chai: ^4.2.0
   prettier: ^2.0.5
-  react: ^17.0.0
-  react-dom: ^17.0.0
+  react: ^17.0.1
+  react-dom: ^17.0.1
+  react-query: ^3.8.3
   snowpack: ^3.0.1
   typescript: ^4.0.0
