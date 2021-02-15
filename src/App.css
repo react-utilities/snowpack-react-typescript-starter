@@ -1,34 +1,23 @@
 .App {
-  background-color: #282c34;
-  color: white;
   min-height: 100vh;
-}
-.App code {
-  background: #fff3;
-  border-radius: 4px;
-  padding: 4px 8px;
-}
-.App p {
-  margin: 0.4rem;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App li {
+  list-style-type: none;
 }
 
 .App-header {
-  align-items: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
   text-align: center;
+  border-bottom: 1px solid;
 }
 
 .App-content {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  /* text-align: center; */
 }
 
 .App-link {
