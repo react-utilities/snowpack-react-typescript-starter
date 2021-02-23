@@ -18,7 +18,7 @@ export const BoxWithButton = () => {
   return (
     <>
       <button onClick={addChildContentOnClick}>Load Child Content</button>
-      <Suspense fallback={<p>Loading....</p>}>
+      <Suspense fallback={<p>Loading Loading Loading ....</p>}>
         <RenderChildContent />
       </Suspense>
     </>
@@ -32,6 +32,10 @@ export function ReactLazy(): JSX.Element {
         <h1>React Lazy</h1>
       </header>
       <h2>Lazy Load Child Component on Button Click</h2>
+      <h3>
+        Open Browser network tab, LazyContent.js will load only after clicking
+        button 👉{' '}
+      </h3>
       <BoxWithButton />
       <nav className="App-navigation">
         <Link to="/">Back to Home ↩️</Link>
